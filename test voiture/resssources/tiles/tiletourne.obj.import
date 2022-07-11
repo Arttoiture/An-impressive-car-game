@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tiletourne.obj-45256280aa8b76f7bcfbd9ab9a98b3b6.mesh"
+
+[deps]
+
+files=[ "res://.import/tiletourne.obj-45256280aa8b76f7bcfbd9ab9a98b3b6.mesh" ]
+
+source_file="res://resssources/tiles/tiletourne.obj"
+dest_files=[ "res://.import/tiletourne.obj-45256280aa8b76f7bcfbd9ab9a98b3b6.mesh", "res://.import/tiletourne.obj-45256280aa8b76f7bcfbd9ab9a98b3b6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resssources/fond.png" type="Texture" id=1]
+[ext_resource path="res://scènes/menus/graphics.gd" type="Script" id=3]
+
+[node name="graphics" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="fond" type="TextureRect" parent="."]
+margin_left = -1.0
+margin_top = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="godot_icon" type="TextureRect" parent="."]
+margin_left = 960.0
+margin_top = 536.0
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -70.0
+margin_top = -32.0
+margin_right = 70.0
+margin_bottom = 32.0
+
+[node name="shadow" type="CheckButton" parent="VBoxContainer"]
+margin_right = 140.0
+margin_bottom = 40.0
+text = "SHADOW"
+align = 1
+
+[node name="back" type="Button" parent="VBoxContainer"]
+margin_top = 44.0
+margin_right = 140.0
+margin_bottom = 64.0
+text = "< BACK"
+
+[connection signal="pressed" from="VBoxContainer/shadow" to="." method="_on_shadow_pressed"]
+[connection signal="pressed" from="VBoxContainer/back" to="." method="_on_back_pressed"]

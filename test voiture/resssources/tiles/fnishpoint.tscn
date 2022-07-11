@@ -1,0 +1,116 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://resssources/tiles/fnishpoint.gd" type="Script" id=1]
+[ext_resource path="res://resssources/tiles/fnishpoint.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://scènes/+ 10 Shoes message/+ 10 Shoes.tscn" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 7.52215, 4.34244, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( 4.54235, 6.2925, 1.0335, 4.54235, 4.20891, -1.13307, 5.20897, 4.20891, -1.13307, 4.54235, 4.20891, 1.1172, 5.20897, 4.20891, 1.1172, 5.16473, 5.7285, -1.00034, 4.47673, 6.24311, -1, 5.16473, 5.7285, 0.98447, 4.45895, 5.29211, 1.0335, 4.54235, 6.2925, -1.04937, 4.45895, 5.29211, -1.04937, 4.47181, 6.25679, 0.997809 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 2.9587, 6.95904, -1.04973, 4.45888, 6.37568, 1.03386, 4.45888, 5.54255, 1.03386, 4.45888, 6.37568, -1.04973, 2.9587, 7.04259, 1.03386, 4.37532, 5.54255, -1.04973, 3.79205, 7.04259, -1.04973, 3.79205, 7.04259, 1.03386, 2.9587, 6.95904, 1.03386, 4.37532, 5.54255, 1.03386, 2.9587, 7.04259, -1.04973, 4.45888, 5.54255, -1.04973 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( -0.0416718, 7.70921, 1.03386, -3.62127, 7.0585, -1, -3.64919, 7.05342, 1, -3.29204, 7.70921, 1.03386, -0.146648, 7.1403, -0.990083, -3.29204, 7.70921, -1.04973, -0.146648, 7.1403, 0.974215, -0.0416718, 7.70921, -1.04973, -2.87529, 7.04259, -1.04973, -2.87529, 7.04259, 1.03386 )
+
+[sub_resource type="ConvexPolygonShape" id=5]
+points = PoolVector3Array( -4.37554, 5.62589, -1.04973, -2.9587, 7.04259, 1.03386, -2.9587, 6.95911, 1.03386, -4.37554, 6.45905, 1.03386, -3.79207, 7.04259, -1.04973, -2.9587, 6.95911, -1.04973, -4.29218, 5.62589, 1.03386, -3.79207, 7.04259, 1.03386, -4.37554, 6.45905, -1.04973, -4.29218, 5.62589, -1.04973, -2.9587, 7.04259, -1.04973, -4.37554, 5.62589, 1.03386 )
+
+[sub_resource type="ConvexPolygonShape" id=6]
+points = PoolVector3Array( 0.0656905, 7.1403, -0.990083, -0.0416718, 7.70921, -1.04973, -0.0416718, 7.70921, 1.03386, 3.29174, 7.70921, -1.04973, 3.61928, 7.0585, -1, 0.0656905, 7.1403, 0.974215, 3.29174, 7.70921, 1.03386, 2.87507, 7.04259, 1.03386, 2.87507, 7.04259, -1.04973, 3.64784, 7.05342, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=7]
+points = PoolVector3Array( 4.47673, -0.428628, -1, 5.20897, 4.20845, 1.1172, 4.54235, 4.20845, 1.1172, 4.54235, 4.20845, -1.13307, 5.1673, 0.389688, -1.00805, 5.04217, -0.541207, 1.0335, 5.20897, 4.20845, -1.13307, 4.47102, -0.464812, 1, 5.04217, -0.541207, -1.04937, 5.1673, 0.389688, 0.992178, 4.45895, 0.542064, -1.04937, 4.45895, 0.542064, 1.0335 )
+
+[sub_resource type="ConvexPolygonShape" id=8]
+points = PoolVector3Array( 4.28527, 0.5, 0.953487, 0.131426, -0.5, -0.96959, 0.131935, 0.5, -0.969355, 0.131426, -0.5, 0.953722, 4.28578, -0.5, -0.96959, 4.28578, -0.5, 0.953722, 4.28527, 0.5, -0.969355, 0.131935, 0.5, 0.953487 )
+
+[sub_resource type="ConvexPolygonShape" id=9]
+points = PoolVector3Array( -5.1673, 2.89176, -1.02076, -4.38902, 6.31686, 1, -4.54235, 2.70873, 1.1172, -4.54235, 2.70873, -1.13307, -5.1673, 5.66741, -1.02076, -5.1673, 5.66741, 1.00489, -4.39537, 6.28892, -1, -5.1673, 2.89176, 1.00489, -4.37562, 5.54198, -1.04937, -4.37562, 5.54198, 1.0335, -4.48258, 6.24602, -0.97563 )
+
+[sub_resource type="ConvexPolygonShape" id=10]
+points = PoolVector3Array( -0.212064, 0.5, 0.953487, -4.28899, -0.5, -0.96959, -4.28849, 0.5, -0.969355, -0.211564, -0.5, -0.96959, -4.28899, -0.5, 0.953722, -0.211564, -0.5, 0.953722, -0.212064, 0.5, -0.969355, -4.28849, 0.5, 0.953487 )
+
+[sub_resource type="ConvexPolygonShape" id=11]
+points = PoolVector3Array( -5.04217, -0.541672, -1.04937, -4.54235, 2.70873, 1.1172, -5.20897, 2.70873, 1.1172, -4.54235, 2.70873, -1.13307, -4.47102, -0.489391, 1, -5.20897, 2.70873, -1.13307, -5.04217, -0.541672, 1.0335, -4.47673, -0.464629, -1, -5.1673, 0.305793, -1.00805, -5.1673, 0.305793, 0.992178, -4.45895, 0.542006, -1.04937, -4.45895, 0.542006, 1.0335 )
+
+[node name="fnishpoint" type="MeshInstance"]
+transform = Transform( 1.461, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+script = ExtResource( 1 )
+
+[node name="finish" type="Area" parent="."]
+transform = Transform( 0.684463, 0, 0, 0, 0.833333, 0, 0, 0, 0.833333, -0.094223, 4.08055, 0.948318 )
+
+[node name="CollisionShape" type="CollisionShape" parent="finish"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.269644, -0.318242, 0 )
+shape = SubResource( 12 )
+
+[node name="+ 10 Shoes" parent="finish" instance=ExtResource( 3 )]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape10" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 3 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 6 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 7 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 8 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 9 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 10 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 11 )
+
+[connection signal="body_entered" from="finish" to="." method="_on_finish_body_entered"]
+[connection signal="body_entered" from="finish" to="finish/+ 10 Shoes" method="_on_finish_body_entered"]
